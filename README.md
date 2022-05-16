@@ -1,6 +1,10 @@
 # -----Team 3-----
 
- Team Members - Abi Mangalan, Surojit Piri, Shreya Singh, Anurup Chakraborty
+## - Team Members - 
+FnUr007 - Abi Mangalan
+FnUr207 - Surojit Piri
+FnUr187 - Shreya Singh
+FnUr031 - Anurup Chakraborty
 
 # Uranium
 
