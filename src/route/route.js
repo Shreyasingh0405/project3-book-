@@ -14,29 +14,29 @@ const router = express.Router();
 
 // ================ user apis ===========================================================================================//
 
-router.post('/register',createUser);
+router.post('/register',createUser); 
 
-router.post('/login',loginUser);
+router.post('/login',loginUser); 
 
 // ================ book apis ===========================================================================================//
 
-router.post('/books',authentication,createBook);
+router.post('/books',authentication,createBook); 
 
-router.get('/books',authentication,getBooks);
+router.get('/books',authentication,getBooks); 
 
-router.get('/books/:bookId',authentication,getBookById);
+router.get('/books/:bookId',authentication,getBookById); 
 
-router.put('/books/:bookId',authentication,updateBookById);
+router.put('/books/:bookId',authentication,updateBookById); 
 
-router.delete('/books/:bookId',authentication,deleteBookById);
+router.delete('/books/:bookId',authentication,deleteBookById); 
 
 // ================ review apis ===========================================================================================//
 
-router.post('/books/:bookId/review',createReview);
+router.post('/books/:bookId/review',createReview); 
 
-router.put('/books/:bookId/review/:reviewId',updateReview);
+router.put('/books/:bookId/review/:reviewId',updateReview); 
 
-router.delete('/books/:bookId/review/:reviewId',deleteReview);
+router.delete('/books/:bookId/review/:reviewId',deleteReview); 
 
 // =========================== exports =======================================================================================//
 

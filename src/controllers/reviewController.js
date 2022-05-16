@@ -78,7 +78,7 @@ const updateReview = async function(req,res)
         const reviewId = req.params.reviewId;
             
         if(!validators.isValidObjectId(reviewId))
-            return res.status(400).send({status : false, message : "The given bookId is not a valid ObjectId."});
+            return res.status(400).send({status : false, message : "The given reviewId is not a valid ObjectId."});
         
         let reviewExists = await reviewModel.findOne({_id : reviewId,bookId,isDeleted : false});
         
