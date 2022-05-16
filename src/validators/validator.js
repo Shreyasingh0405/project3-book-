@@ -61,10 +61,11 @@ const isValidEmail = function(email)
 
 const isValidPassword = function (password)
 {
-    if(password.length>=15||password.length<=8)
+    if(password.length>=15&&password.length<=8)
         return false;
 
-    return true;
+    regexpass = /\w{8,15}/;
+    return (regexpass.test(password));
 };
 
 // ================ ISBN Validation ===========================================================================================//
